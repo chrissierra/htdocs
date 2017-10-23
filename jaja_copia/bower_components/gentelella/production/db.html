@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base de datos</title>
+</head>
+<body>
+    <script>
+
+
+        var objeto={
+
+  datos:'juan',
+
+  nombre_base: 'mibase2', 
+
+  request1: function(){ var request = window.indexedDB.open(this.nombre_base, 3); return request;},
+
+  agregar_datos: function(){
+    var uno= this.objeto_store();
+    var request= this.request1();
+    var datos= this.datos;
+
+         request.onsuccess = function(event) {
+         var db = event.target.result;
+
+         var customerTransaction = db.transaction("customers", "readwrite");
+  
+         var customerStore = customerTransaction.objectStore("customers");
+        // console.log("dentro de agregardatos: "+a)
+         customerStore.add({"passport_number": "6651939", "first_name": datos, "last_name": "Ater"});
+  
+         };
+
+
+   },
+
+
+  obtener_datos:function(){
+  var uno= this.objeto_store();
+  var request= this.request1();
+
+ 
+
+request.onsuccess = function(event) {
+  var db = event.target.result;
+  var customerTransaction = db.transaction("customers");
+  var customerStore = customerTransaction.objectStore("customers");
+  var customerCursor = customerStore.openCursor();
+  customerCursor.onsuccess = function(event) {
+    var cursor = event.target.result;
+    if (!cursor) { return; }
+    console.log("en obtenerdatos: "+cursor.value.first_name);
+    cursor.continue();
+  };
+};
+
+
+
+  },
+
+
+objeto_store: function(){
+    
+var request= this.request1();
+request.onupgradeneeded = function(event) {
+  var db = event.target.result;
+  db.createObjectStore("customers",
+    { keyPath: "passport_number" }
+  );
+};
+},
+
+/*hola: function(){
+//var request = window.indexedDB.open("mibase", 3);
+var request= this.request1();
+
+request.onerror = function(event) {
+  console.log("Database error: ", event.target.error);
+};
+
+request.onsuccess = function(event) {
+  var db = event.target.result;
+  var customerData = [
+    {"passport_number": "6651933", "first_name": "Tal", "last_name": "Ater"},
+    {"passport_number": "7727312", "first_name": "Archie", "last_name": "Stevens"}
+  ];
+  var customerTransaction = db.transaction("customers", "readwrite");
+  customerTransaction.onerror = function(event) {
+    console.log("Error: ", event.target.error);
+  };
+  var customerStore = customerTransaction.objectStore("customers");
+  for (var i = 0; i < customerData.length; i++) {
+    customerStore.add(customerData[i]);
+  }
+};
+
+
+
+request.onupgradeneeded = function(event) {
+  var db = event.target.result;
+  db.createObjectStore("customers",
+    { keyPath: "passport_number" }
+  );
+};
+
+}// termina funcion, metodo hola*/
+
+
+
+        } // termina var objeto
+    
+  
+    setTimeout(function(){
+//objeto.hola();
+//objeto.objeto_store();
+
+objeto.datos= "Christopher Sierra";
+objeto.agregar_datos();
+objeto.obtener_datos();
+    },  5000);
+    
+    </script>
+</body>
+</html>
