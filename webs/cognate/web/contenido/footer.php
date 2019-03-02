@@ -5,7 +5,7 @@
 				<p class="para">Puedes encontrarnos vía correo o llamando a nuestro número:</p>
 			<ul class="con-icons">
 				<li><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>+56 9 4475 0588</li>
-				<li><a href="mailto:info@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>info@sister-erp.com</a></li>
+				<li><a href="mailto:info@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>administrador@sister.cl</a></li>
 				<li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Santiago, Chile</li>
 			
 			</ul>
@@ -32,10 +32,9 @@
 		</div>
 	
 		<div class="clearfix"></div>
-		<p class="copy-right wow fadeInUp animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">© 2017 Sister ERP. All rights reserved | Diseño por  <a href="http://w3layouts.com/">Grupo Sister</a></p>
+		<p class="copy-right wow fadeInUp animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">© 2019 Sister ERP. Todos los derechos reservados | Diseño por  <a href="https://christophersierra.com/">Grupo Sister</a></p>
 			
 	</div>
 </div>
 	<!-- //w3ls -->
 </body>
-<script src="./js/chat.js"></script>

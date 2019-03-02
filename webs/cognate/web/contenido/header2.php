@@ -14,7 +14,7 @@
 
 							<span class="email">
 								<i class="glyphicon glyphicon-send"></i>
-								<em><a href="mailto:info@example.com">info@sister-erp.com</a></em>
+								<em><a href="mailto:administrador@sister.cl">administrador@sister.cl</a></em>
 							</span>
 
 						<!--	<span class="location">

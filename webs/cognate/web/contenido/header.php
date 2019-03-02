@@ -13,7 +13,7 @@
 
 							<span class="email">
 								<i class="glyphicon glyphicon-send"></i>
-								<em><a href="mailto:info@example.com">info@sister-erp.com</a></em>
+								<em><a href="mailto:administrador@sister.cl">administrador@sister.cl</a></em>
 							</span>
 
 						<!--	<span class="location">
@@ -58,7 +58,7 @@
 					
 					<div class="navbar-header wow fadeInLeft animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
 						
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1 ">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -67,7 +67,7 @@
 						<h1><a href="index.php">Sister ERP</a></h1>
 					</div>
 					<!--navbar-header-->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 wow fadeInRight animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
+					<div class="collapse navbar-collapse  wow fadeInRight animated animated" id="bs-example-navbar-collapse-1" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
 						<!-- funciona bien -->
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="index.php" class="tabs_superior">Inicio</a></li>
@@ -105,7 +105,7 @@
 		<div class="banner-info"  >
 				
 			<h2>Gestión de recursos humanos</h2>
-			<p> Delega toda tu gestión de recursos humanos en expertos y gana tiempo extra para tu emprendimiento. </p>
+			<p style='color: white;font-weight: bold;'> Delega toda tu gestión de recursos humanos en expertos y gana tiempo extra para tu emprendimiento. </p>
 		</div>
 		
 		</div>

@@ -15,7 +15,7 @@ if ($_FILES["file"]["error"] > 0) {
   $new_image_name = strtolower($_FILES['file']['name']);
   move_uploaded_file($_FILES["file"]["tmp_name"], $new_image_name);
  
-  $hola= shell_exec("sudo mplayer algo.wav");
+  $hola= shell_exec("sudo mplayer algo.wav"); // decia mplayer
   $peo= system("sudo php audio_reproducir.php");
   $jaja= shell_exec("php /src/share/nginx/html/audio_reproducir.php");
 

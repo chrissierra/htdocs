@@ -24,7 +24,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 
-<?php include("./contenido/chat.php"); ?>
+<?php //include("./contenido/chat.php"); ?>
 
 
 
